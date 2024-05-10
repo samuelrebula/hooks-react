@@ -1,9 +1,11 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import HookUseState from "./HookUseState";
+import HookUseEffect from "./HookUseEffect";
+import HookUseRef from "./HookUseRef";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders componens", () => {
+  render(<HookUseState />);
+  render(<HookUseEffect />);
+  render(<HookUseRef />);
 });
