@@ -5,6 +5,7 @@ import "./index.scss";
 import HookUseEffect from "./HookUseEffect";
 import HookUseState from "./HookUseState";
 import HookUseRef from "./HookUseRef";
+import HookUseReducer from "./HookUseReducer";
 
 const root = (ReactDOM as any).createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,9 @@ root.render(
             <li>
               <Link to="/UseRef">UseRef</Link>
             </li>
+            <li>
+              <Link to="/UseReducer">UseReducer</Link>
+            </li>
           </ul>
         </nav>
 
@@ -29,6 +33,7 @@ root.render(
           <Route path="/useState" element={<HookUseState />} />
           <Route path="/useEffect" element={<HookUseEffect />} />
           <Route path="/useRef" element={<HookUseRef />} />
+          <Route path="/useReducer" element={<HookUseReducer />} />
         </Routes>
       </div>
     </Router>
