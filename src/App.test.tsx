@@ -6,6 +6,7 @@ import HookUseReducer from "./HookUseReducer";
 import HookUseContext from "./HookUseContext";
 import HookUseMemo from "./HookUseMemo";
 import HookUseCallback from "./HookUseCallback";
+import HookUseLayoutEffect from "./HookUseLayoutEffect";
 
 test("renders componens", () => {
   render(<HookUseState />);
@@ -15,4 +16,5 @@ test("renders componens", () => {
   render(<HookUseContext />);
   render(<HookUseMemo />);
   render(<HookUseCallback />);
+  render(<HookUseLayoutEffect />);
 });
