@@ -4,6 +4,7 @@ const HookUseMemo: React.FC = () => {
   const [number, setNumber] = useState(1);
   const [text, setText] = useState("");
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const doubleNumber = useMemo(() => {
     return slowFunction(number);
   }, [number]);
