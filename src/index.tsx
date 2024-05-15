@@ -6,6 +6,7 @@ import HookUseEffect from "./HookUseEffect";
 import HookUseState from "./HookUseState";
 import HookUseRef from "./HookUseRef";
 import HookUseReducer from "./HookUseReducer";
+import HookUseContext from "./HookUseContext";
 
 const root = (ReactDOM as any).createRoot(document.getElementById("root"));
 root.render(
@@ -26,6 +27,9 @@ root.render(
             <li>
               <Link to="/UseReducer">UseReducer</Link>
             </li>
+            <li>
+              <Link to="/UseContext">UseContext</Link>
+            </li>
           </ul>
         </nav>
 
@@ -34,6 +38,7 @@ root.render(
           <Route path="/useEffect" element={<HookUseEffect />} />
           <Route path="/useRef" element={<HookUseRef />} />
           <Route path="/useReducer" element={<HookUseReducer />} />
+          <Route path="/useContext" element={<HookUseContext />} />
         </Routes>
       </div>
     </Router>
